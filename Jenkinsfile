@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'  
         DOCKER_IMAGE = 'cithit/patelmd7'                               //<-----change this to your MiamiID!
-        IMAGE_TAG = "build-${BUILD_NUMBER}"
+        IMAGE_TAG = "lab3-9-build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/patelmd7-ai/225-lab3-9.git' //<-----change this to match this new repository!
         KUBECONFIG = credentials('patelmd7-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
     }
